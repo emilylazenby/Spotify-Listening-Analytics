@@ -19,8 +19,8 @@ A personal data analytics project built on one year of Spotify streaming history
 ## Key findings
 
 - Top artist: The Haunt (229 plays, 400 minutes)
-- Most played track: obsessed
-- Peak listening hours: midnight to 5am and 10pm to 11pm
+- Most played track: 12 to 12 (sombr)
+- Peak listening hours: 6pm to 9pm CST (evening) with a secondary afternoon cluster
 - Highest listening month: July 2025 (51 hours)
 - Most loyal artist by skip rate: Florence + The Machine (4.9% skip rate)
 
