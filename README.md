@@ -29,3 +29,9 @@ A personal data analytics project built on one year of Spotify streaming history
 scripts/01_ingest.py - loads raw JSON into SQLite database
 scripts/02_analyze.py - runs analysis queries
 scripts/03_export.py - exports CSVs for Power BI
+
+## Updates
+
+- Corrected listening hours from UTC to CST (5 hour offset applied in export)
+- Top tracks now display as "track (artist)" for clearer identification
+- Power BI dashboard refined with Top N filter and sort corrections
