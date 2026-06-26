@@ -20,7 +20,7 @@ pd.read_sql_query("""
 """, conn).to_csv(f"{EXPORT_DIR}/top_artists.csv", index=False)
 
 pd.read_sql_query("""
-    SELECT track_name, artist_name,
+    SELECT track_name || ' (' || artist_name || ')' as track,
            COUNT(*) as play_count,
            ROUND(SUM(ms_played) / 60000.0, 1) as minutes_played
     FROM streams
@@ -30,8 +30,9 @@ pd.read_sql_query("""
 """, conn).to_csv(f"{EXPORT_DIR}/top_tracks.csv", index=False)
 
 pd.read_sql_query("""
-    SELECT CAST(SUBSTR(end_time, 12, 2) AS INTEGER) as hour,
-           COUNT(*) as play_count
+    SELECT 
+        (CAST(SUBSTR(end_time, 12, 2) AS INTEGER) - 5 + 24) % 24 as hour,
+        COUNT(*) as play_count
     FROM streams
     GROUP BY hour
     ORDER BY hour
