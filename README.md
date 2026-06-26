@@ -34,4 +34,3 @@ scripts/03_export.py - exports CSVs for Power BI
 
 - Corrected listening hours from UTC to CST (5 hour offset applied in export)
 - Top tracks now display as "track (artist)" for clearer identification
-- Power BI dashboard refined with Top N filter and sort corrections
