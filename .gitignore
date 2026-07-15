@@ -4,3 +4,4 @@ my_spotify_data.zip
 my_spotify_data 2.zip
 db/
 exports/
+.env
