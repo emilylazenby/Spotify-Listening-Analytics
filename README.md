@@ -44,3 +44,19 @@ scripts/01_ingest.py - loads raw JSON into SQLite database
 scripts/02_analyze.py - runs analysis queries
 scripts/03_export.py - exports CSVs for Power BI
 
+## Spotify API Integration
+
+Connected to the Spotify Web API using Spotipy to enrich the listening 
+data with additional track metadata. For each of the top 50 most played 
+tracks, the API pulls:
+
+- Track duration
+- Explicit flag
+- Album name
+
+Note: Spotify deprecated audio features and popularity endpoints for new 
+apps in 2024, so this project uses the available track and artist 
+endpoints instead.
+
+scripts/04_spotify_api.py - authenticates with Spotify API and pulls 
+track and artist metadata for top 50 tracks
