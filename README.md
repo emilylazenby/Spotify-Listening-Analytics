@@ -60,3 +60,7 @@ endpoints instead.
 
 scripts/04_spotify_api.py - authenticates with Spotify API and pulls 
 track and artist metadata for top 50 tracks
+
+Added a second Power BI dashboard page (Track Deep Dive) visualizing 
+track metadata pulled from the Spotify API, including explicit vs clean 
+track breakdown across top 50 tracks and average song duration by artist.
