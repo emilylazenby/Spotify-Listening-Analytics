@@ -3,6 +3,8 @@
 A personal data analytics project built on one year of Spotify streaming history 
 (June 2025 to June 2026).
 
+![Dashboard Screenshot](dashboard%20screenshot.png)
+
 ## What this project does
 
 - Ingests raw JSON data from Spotify's personal data export into a SQLite database
