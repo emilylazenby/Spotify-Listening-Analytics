@@ -4,7 +4,7 @@ A personal data analytics project built on one year of Spotify streaming history
 (June 2025 to June 2026).
 
 ![Dashboard Screenshot](dashboard%20screenshot.png)
-![Track Deep Dive Dashboard](track%20deep%20dive.png)
+![Track Deep Dive Dashboard](dashboard%20screenshot%202.png)
 
 ## What this project does
 
